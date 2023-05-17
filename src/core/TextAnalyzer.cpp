@@ -32,7 +32,7 @@ void TextAnalyzer::print_words_more_than_5_percent() const {
   } else {
     std::size_t counter{1};
     for (const auto& word : get_words_more_than_5_percent()) {
-      cout << counter << ". " << word << '\n';
+      cout << counter << '. ' << word << '\n';
       counter++;
     }
   }
