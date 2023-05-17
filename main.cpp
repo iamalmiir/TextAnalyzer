@@ -3,8 +3,9 @@
  * Author: Almir Redzematovic
  * Date: 5/16/23
  *
- * Description: This program analyzes a text report and generates a report based
- * on the analysis.
+ * Description: This program analyzes a text file and prints out the results
+ * of the analysis. Gives the user the option to enter a file name or use the
+ * default file name.
  */
 
 #include "src/core/TextAnalyzer.cpp"
