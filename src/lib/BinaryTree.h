@@ -11,7 +11,7 @@
 
 /**
  * Node class
- * @tparam T type of data
+ * @param T type of data
  */
 template <typename T>
 class Node {

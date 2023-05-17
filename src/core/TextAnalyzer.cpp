@@ -30,7 +30,7 @@ void TextAnalyzer::print_words_more_than_5_percent() const {
   if (words.size() == 0) {
     cout << "No words found with percentage greater than 5\n";
   } else {
-    int counter = 1;
+    std::size_t counter{1};
     for (const auto& word : get_words_more_than_5_percent()) {
       cout << counter << ". " << word << '\n';
       counter++;
@@ -61,7 +61,7 @@ void TextAnalyzer::read_report(const std::string& file_name) {
 
   while (file >> word) {
     // Check if the word ends with an end-of-sentence character
-    char last_char = word.back();
+    char last_char{word.back()};
     if (std::find(std::begin(end_of_sentence_chars),
                   std::end(end_of_sentence_chars),
                   last_char) != std::end(end_of_sentence_chars)) {
